@@ -1,0 +1,219 @@
+﻿
+<!DOCTYPE html>
+<html lang="zxx" ng-app="MyApp">
+<head>
+
+    <title>Home</title>
+    <!-- Meta-Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="Odyssey a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+   
+    <!-- Bootstrap-CSS -->
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
+    <!-- Index-Page-CSS -->
+    <link href="~/css/style.css" rel="stylesheet" />
+    <!-- Owl-Carousel-CSS -->
+    <link href="~/css/owl.carousel.css" rel="stylesheet" />
+    <!-- Date-Picker-CSS -->
+    <link href="~/css/jquery-ui.css" rel="stylesheet" />
+    <!-- Chocolat-CSS -->
+    <link href="~/css/chocolat.css" rel="stylesheet" />
+    <!-- Fonts -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700" type="text/css" media="all">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:100,300,400,500" type="text/css" media="all">
+    <!-- CSS -->
+    <link href="~/css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- TTF -->
+    <link rel="stylesheet" href="~/fonts/fontawesome-webfont.ttf" type="text/css" media="all">
+
+    @*<script src="js/modernizr.js"></script>*@
+    <script src="~/js/modernizr.js"></script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="agileheader" id="agileitshome">
+
+        <!-- Navigation -->
+        <div class="w3lsnavigation" >
+
+            <nav role="navigation" class=" navbar-inverse" style="height:60px;text-align:center;">
+                <ul class="nav navbar-nav" style="margin-left:80px">
+                    <li><a href="#/Main">HOME</a></li>
+                    <li style="margin-left:80px"><a href="#/Home">PLOT DETAILS</a></li>
+                    <li style="margin-left:80px"><a href="#/About">ABOUT US</a></li>
+                    <li style="margin-right:300px"><a href="#/Contact Us">Contact Us</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        </div>
+    <div >
+        @RenderBody()
+    </div>
+    <!-- Social-Icons -->
+    <div class="agilesocialwthree">
+            <ul class="social-icons">
+                <li><a href="#" class="facebook w3ls" title="Go to Our Facebook Page"><i class="fa w3ls fa-facebook-square" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="twitter w3l" title="Go to Our Twitter Account"><i class="fa w3l fa-twitter-square" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="googleplus w3" title="Go to Our Google Plus Account"><i class="fa w3 fa-google-plus-square" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="instagram wthree" title="Go to Our Instagram Account"><i class="fa wthree fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="youtube w3layouts" title="Go to Our Youtube Channel"><i class="fa w3layouts fa-youtube-square" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="pinterest w3layouts" title="Go to Our Pinterest Account"><i class="fa w3layouts fa-pinterest-square" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="tumblr w3layouts" title="Go to Our Tumblr Account"><i class="fa fa-tumblr-square" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    <!-- //Social-Icons -->
+    <!-- Footer -->
+    <div class="agilefooterwthree" id="agilefooterwthree">
+        <div class="container">
+
+            <div class="agilefooterwthree-grids">
+                <div class="col-md-4 agilefooterwthree-grid agilefooterwthree-grid1">
+                    <h4>LINKS</h4>
+                    <ul>
+                        <li><a href="#/Main">HOME</a></li>
+                        <li><a href="#/Home">PLOT DETAILS</a></li>
+                        <li><a href="#/About">ABOUT US</a></li>
+                        <li><a href="#/Contact Us">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 agilefooterwthree-grid agilefooterwthree-grid2">
+                    <h4>ADDRESS</h4>
+                    <address>
+                        <ul>
+                            <li>PTA Construction</li>
+                            <li>Road-9</li>
+                            <li>House NO : 8/9</li>
+                            <li>Shukrabad, Dhanmondi</li>
+                            <li>+88016897525</li>
+                            <li><a class="mail" href="mailto:mail@example.com">info@example.com</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="col-md-4 agilefooterwthree-grid agilefooterwthree-grid3 newsletter">
+                    <h4>SUBSCRIBE</h4>
+                    <p>Subscribe to our Newsletter</p>
+                    <form action="#" method="post">
+                        <input class="email aitsw3ls" type="email" placeholder="Your Email" required="">
+                        <input type="submit" class="submit" value="">
+                    </form>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>© 2017 Odyssey. All Rights Reserved | Design by Tanvir Ahmmed  </p>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script src="~/js/jquery-2.1.4.min.js"></script>
+    <script src="~/js/bootstrap.js"></script>
+
+    <script src="~/js/responsiveslides.min.js"></script>
+    <script>
+        $(function () {
+            $("#slider").responsiveSlides({
+                auto: true,
+                nav: true,
+                speed: 2000,
+                namespace: "callbacks",
+                pager: true,
+            });
+        });
+    </script>
+    <!-- //Responsive-Slider-JavaScript -->
+    <script src="~/js/main.js"></script>
+    <script src="~/js/classie.js"></script>
+    <script src="~/js/helper.js"></script>
+    <script src="~/js/grid3d.js"></script>
+    <script>
+        new grid3D(document.getElementById('grid3d'));
+    </script>
+    <script src="~/js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo, #owl-demo1, #owl-demo2, #owl-demo3, #owl-demo4").owlCarousel({
+                autoPlay: 4000,
+                items: 3,
+                itemsDesktop: [568, 2],
+                itemsDesktopSmall: [414, 1]
+            });
+        });
+    </script>
+    <script src="~/js/jquery.magnific-popup.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.popup-with-zoom-anim').magnificPopup({
+                type: 'inline',
+                fixedContentPos: false,
+                fixedBgPos: true,
+                overflowY: 'auto',
+                closeBtnInside: true,
+                preloader: false,
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-zoom-in'
+            });
+        });
+    </script>
+    <script src="~/js/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#datepicker,#datepicker1,#datepicker2").datepicker();
+        });
+    </script>
+    <script src="~/js/jquery.chocolat.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.w3portfolioaits-item a').Chocolat();
+        });
+    </script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript">
+        google.maps.event.addDomListener(window, 'load', init);
+        function init() {
+            var mapOptions = {
+                zoom: 11,
+                center: new google.maps.LatLng(43.73333, 7.41667),
+                styles: [{ "featureType": "all", "elementType": "labels.text.fill", "stylers": [{ "saturation": 36 }, { "color": "#000000" }, { "lightness": 40 }] }, { "featureType": "all", "elementType": "labels.text.stroke", "stylers": [{ "visibility": "on" }, { "color": "#000000" }, { "lightness": 16 }] }, { "featureType": "all", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative", "elementType": "geometry.fill", "stylers": [{ "color": "#000000" }, { "lightness": 20 }] }, { "featureType": "administrative", "elementType": "geometry.stroke", "stylers": [{ "color": "#000000" }, { "lightness": 17 }, { "weight": 1.2 }] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 20 }] }, { "featureType": "poi", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 21 }] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{ "color": "#000000" }, { "lightness": 17 }] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "color": "#000000" }, { "lightness": 29 }, { "weight": 0.2 }] }, { "featureType": "road.arterial", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 18 }] }, { "featureType": "road.local", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 16 }] }, { "featureType": "transit", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 19 }] }, { "featureType": "water", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 17 }] }]
+            };
+            var mapElement = document.getElementById('map');
+            var map = new google.maps.Map(mapElement, mapOptions);
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(43.73333, 7.41667),
+                map: map,
+            });
+        }
+    </script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var defaults = {
+                containerID: 'toTop',
+                containerHoverID: 'toTopHover',
+                scrollSpeed: 100,
+                easingType: 'linear',
+            };
+        });
+    </script>
+    <a href="#agileitshome" id="toTop" class="stuoyal3w scroll stieliga" style="display: block;"> <span id="toTopHover" style="opacity: 0;"> </span></a>
+   
+</body>
+
+</html>

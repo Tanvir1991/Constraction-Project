@@ -1,0 +1,82 @@
+﻿
+
+<!--<meta charset="utf-8" />-->
+<!--<link href="Content/bootstrap.css" rel="stylesheet" />-->
+<!--<script src="Scripts/jquery-1.9.0.js"></script>-->
+<script src="Scripts/bootstrap.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.28//angular-route.min.js"></script>
+<script src="service.js"></script>
+<script src="Demo.js"></script>
+
+<h1 class="text-center text-danger">Edit Plot Details</h1>
+<br />
+<div class="row" style="height:700px; ">
+    <div >
+        <div class="col-md-2 col-md-offset-1">
+            <h3 class="text-danger">Select Plot Name</h3>
+            <br />
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownmenu1" data-toggle="dropdown">
+                    {{selectedItem}}
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownmenu1">
+                    <li ng-repeat="a in plts">
+                        <a ng-click="dropboxitemselected(a)">{{a.Name}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-7 col-md-offset-1">
+            <form ng-show="isDeleteItemVisible">
+                <div class="form-group">
+                    <label for="inputemail"> Plot Name :</label>
+                    <input type="text" ng-model="name" class="form-control input-lg" placeholder="Enter Plot Name" />
+                </div>
+                <div class="form-group">
+                    <label for="inputpass"> Plot Size :</label>
+                    <input type="text" ng-model="size" class="form-control input-lg" placeholder="Enter Plot Size" />
+                </div>
+                <div class="form-group">
+                    <label for="inputemail"> Plot Price :</label>
+                    <input type="text" ng-model="price" class="form-control input-lg" placeholder="Enter Plot Price" />
+                </div>
+                <div class="form-group">
+                    <label for="inputemail"> Plot Construction Date :</label>
+                    <input type="text" ng-model="consdate" class="form-control input-lg" placeholder="MM/DD/YYYY" />
+                </div>
+                <div class="form-group">
+                    <label for="inputemail">   Note :</label>
+                    <!--<input type="text" ng-model="note" class="form-control input-lg" placeholder="Enter Note " />-->
+                    <textarea ng-model="note" class="form-control input-lg" placeholder="Enter Note "></textarea>
+
+                </div>
+                <div class="form-group">
+                    <label for="inputemail"> Plot Sold :</label>
+                    <input type="text" ng-model="sold" class="form-control input-lg" placeholder="Sold" />
+                </div>
+                <div class="form-group">
+                    <label for="inputemail"> Plot Owner Name  :</label>
+                    <input type="text" ng-model="ownername" class="form-control input-lg" placeholder="Enter Owner Name" />
+                </div>
+                <div class="form-group">
+                    <label for="inputemail"> Plot Owner Phone  :</label>
+                    <input type="text" ng-model="ownerphone" class="form-control input-lg" placeholder="Enter Owner Phone" />
+                </div>
+
+                <button ng-click="UpdatePlot()" class="btn btn-warning form-control input-lg">Update</button>
+
+            </form>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+</div>

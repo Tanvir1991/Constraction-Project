@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBPLOTModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Plots">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="Size" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="Price" Type="float" Nullable="false" />
+    <Property Name="Constraction_s_Date" Type="datetime" />
+    <Property Name="Note" Type="varchar" MaxLength="260" />
+    <Property Name="Sold" Type="float" />
+    <Property Name="OwnerName" Type="varchar" MaxLength="50" />
+    <Property Name="OwnerPhone" Type="nvarchar" MaxLength="15" />
+  </EntityType>
+  <EntityContainer Name="DBPLOTModelStoreContainer">
+    <EntitySet Name="Plots" EntityType="Self.Plots" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
